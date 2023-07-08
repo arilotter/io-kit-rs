@@ -25,9 +25,9 @@ pub type IOVirtualAddress = mach_vm_address_t;
 pub type IOVirtualAddress = vm_address_t;
 
 #[cfg(all(
-    not(target_arch = "arm"),
-    not(target_arch = "x86"),
-    not(target_arch = "x86_64")
+  not(target_arch = "arm"),
+  not(target_arch = "x86"),
+  not(target_arch = "x86_64")
 ))]
 pub type IOByteCount = IOByteCount64;
 #[cfg(any(target_arch = "arm", target_arch = "x86", target_arch = "x86_64"))]
@@ -36,21 +36,21 @@ pub type IOByteCount = IOByteCount32;
 pub type IOLogicalAddress = IOVirtualAddress;
 
 #[cfg(all(
-    not(target_arch = "arm"),
-    not(target_arch = "x86"),
-    not(target_arch = "x86_64")
+  not(target_arch = "arm"),
+  not(target_arch = "x86"),
+  not(target_arch = "x86_64")
 ))]
 pub type IOPhysicalAddress = IOPhysicalAddress64;
 #[cfg(all(
-    not(target_arch = "arm"),
-    not(target_arch = "x86"),
-    not(target_arch = "x86_64")
+  not(target_arch = "arm"),
+  not(target_arch = "x86"),
+  not(target_arch = "x86_64")
 ))]
 pub type IOPhysicalLength = IOPhysicalLength64;
 #[cfg(all(
-    not(target_arch = "arm"),
-    not(target_arch = "x86"),
-    not(target_arch = "x86_64")
+  not(target_arch = "arm"),
+  not(target_arch = "x86"),
+  not(target_arch = "x86_64")
 ))]
 pub const IOPhysSize: c_int = 64;
 
@@ -64,25 +64,25 @@ pub const IOPhysSize: c_int = 32;
 #[repr(C)]
 #[derive(Debug, Copy)]
 pub struct IOPhysicalRange {
-    address: IOPhysicalAddress,
-    length: IOByteCount,
+  address: IOPhysicalAddress,
+  length: IOByteCount,
 }
 impl Clone for IOPhysicalRange {
-    fn clone(&self) -> Self {
-        *self
-    }
+  fn clone(&self) -> Self {
+    *self
+  }
 }
 
 #[repr(C)]
 #[derive(Debug, Copy)]
 pub struct IOVirtualRange {
-    address: IOVirtualAddress,
-    length: IOByteCount,
+  address: IOVirtualAddress,
+  length: IOByteCount,
 }
 impl Clone for IOVirtualRange {
-    fn clone(&self) -> Self {
-        *self
-    }
+  fn clone(&self) -> Self {
+    *self
+  }
 }
 
 #[cfg(all(not(target_arch = "arm"), not(target_arch = "x86")))]
@@ -91,27 +91,27 @@ pub type IOAddressRange = IOVirtualRange;
 #[repr(C)]
 #[derive(Debug, Copy)]
 pub struct IOAddressRange {
-    address: mach_vm_address_t,
-    length: mach_vm_size_t,
+  address: mach_vm_address_t,
+  length: mach_vm_size_t,
 }
 #[cfg(any(target_arch = "arm", target_arch = "x86"))]
 impl Clone for IOAddressRange {
-    fn clone(&self) -> Self {
-        *self
-    }
+  fn clone(&self) -> Self {
+    *self
+  }
 }
 
 // Map between #defined or enum'd constants and text description.
 #[repr(C)]
 #[derive(Debug, Copy)]
 pub struct IONamedValue {
-    value: c_int,
-    name: *const c_char,
+  value: c_int,
+  name: *const c_char,
 }
 impl Clone for IONamedValue {
-    fn clone(&self) -> Self {
-        *self
-    }
+  fn clone(&self) -> Self {
+    *self
+  }
 }
 
 // Memory alignment -- specified as a power of two.

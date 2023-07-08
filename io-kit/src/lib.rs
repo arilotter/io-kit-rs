@@ -9,5 +9,7 @@ extern crate io_kit_sys;
 
 pub use io_kit_sys::ret;
 
+pub mod actuator;
 pub mod base;
 pub mod hid;
+pub mod registry;

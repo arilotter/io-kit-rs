@@ -36,12 +36,12 @@ pub const kIOPMConfigRetained: u32 = 0x1000;
 pub const kIOPMStaticPowerValid: u32 = 0x0800;
 pub const kIOPMSoftSleep: u32 = 0x0400;
 pub const kIOPMCapabilitiesMask: u32 = kIOPMPowerOn
-    | kIOPMDeviceUsable
-    | kIOPMMaxPerformance
-    | kIOPMContextRetained
-    | kIOPMConfigRetained
-    | kIOPMSleepCapability
-    | kIOPMRestartCapability;
+  | kIOPMDeviceUsable
+  | kIOPMMaxPerformance
+  | kIOPMContextRetained
+  | kIOPMConfigRetained
+  | kIOPMSleepCapability
+  | kIOPMRestartCapability;
 
 // Support for old names of IOPMPowerFlag constants
 pub const IOPMNotAttainable: u32 = kIOPMNotAttainable;
@@ -75,43 +75,43 @@ pub const kIOPMUnknown: u32 = 0xFFFF;
 
 // AppleClamshellState
 pub const kAppleClamshellStateKey: *const ::std::os::raw::c_char =
-    b"AppleClamshellState\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
+  b"AppleClamshellState\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
 
 // AppleClamshellCausesSleep
 pub const kAppleClamshellCausesSleepKey: *const ::std::os::raw::c_char =
-    b"AppleClamshellCausesSleep\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
+  b"AppleClamshellCausesSleep\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
 
 // kIOPMSleepWakeUUIDKey
 pub const kIOPMSleepWakeUUIDKey: *const ::std::os::raw::c_char =
-    b"SleepWakeUUID\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"SleepWakeUUID\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 
 // kIOPMBootSessionUUIDKey
 pub const kIOPMBootSessionUUIDKey: *const ::std::os::raw::c_char =
-    b"BootSessionUUID\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"BootSessionUUID\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 
 // kIOPMDeepSleepEnabledKey
 pub const kIOPMDeepSleepEnabledKey: *const ::std::os::raw::c_char =
-    b"Standby Enabled\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"Standby Enabled\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 
 // kIOPMDeepSleepDelayKey
 pub const kIOPMDeepSleepDelayKey: *const ::std::os::raw::c_char =
-    b"Standby Delay\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"Standby Delay\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 
 // kIOPMDeepSleepDelayHighKey
 pub const kIOPMDeepSleepDelayHighKey: *const ::std::os::raw::c_char =
-    b"High Standby Delay\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"High Standby Delay\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 
 // kIOPMLowBatteryThresholdKey
 pub const kIOPMStandbyBatteryThresholdKey: *const ::std::os::raw::c_char =
-    b"Standby Battery Threshold\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
+  b"Standby Battery Threshold\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
 
 // kIOPMDestroyFVKeyOnStandbyKey
 pub const kIOPMDestroyFVKeyOnStandbyKey: *const ::std::os::raw::c_char =
-    b"DestroyFVKeyOnStandby\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"DestroyFVKeyOnStandby\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 
 // kIOPMResetPowerStateOnWakeKey
 pub const kIOPMResetPowerStateOnWakeKey: *const ::std::os::raw::c_char =
-    b"IOPMResetPowerStateOnWake\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
+  b"IOPMResetPowerStateOnWake\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
 
 // Driver Assertion bitfield description
 pub const kIOPMDriverAssertionCPUBit: u32 = 0x01;
@@ -126,27 +126,27 @@ pub const kIOPMDriverAssertionNetworkKeepAliveActiveBit: u32 = 0x200;
 
 // kIOPMAssertionsDriverKey
 pub const kIOPMAssertionsDriverKey: *const ::std::os::raw::c_char =
-    b"DriverPMAssertions\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"DriverPMAssertions\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 pub const kIOPMAssertionsDriverDetailedKey: *const ::std::os::raw::c_char =
-    b"DriverPMAssertionsDetailed\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
+  b"DriverPMAssertionsDetailed\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
 
 // Kernel Driver assertion detailed dictionary keys
 pub const kIOPMDriverAssertionIDKey: *const ::std::os::raw::c_char =
-    b"ID\x00" as *const [u8; 3usize] as *const ::std::os::raw::c_char;
+  b"ID\x00" as *const [u8; 3usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionCreatedTimeKey: *const ::std::os::raw::c_char =
-    b"CreatedTime\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"CreatedTime\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionModifiedTimeKey: *const ::std::os::raw::c_char =
-    b"ModifiedTime\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"ModifiedTime\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionOwnerStringKey: *const ::std::os::raw::c_char =
-    b"Owner\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
+  b"Owner\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionOwnerServiceKey: *const ::std::os::raw::c_char =
-    b"ServicePtr\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"ServicePtr\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionRegistryEntryIDKey: *const ::std::os::raw::c_char =
-    b"RegistryEntryID\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"RegistryEntryID\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionLevelKey: *const ::std::os::raw::c_char =
-    b"Level\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
+  b"Level\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDriverAssertionAssertedKey: *const ::std::os::raw::c_char =
-    b"Assertions\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"Assertions\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 
 // Root Domain general interest messages
 pub const kClamshellStateBit: u32 = 1 << 0;
@@ -188,77 +188,77 @@ pub const IOPMNotYetInitialized: u32 = kIOPMNotYetInitialized;
 
 // IOPMPowerSource class descriptive strings
 pub const kIOPMPSExternalConnectedKey: *const ::std::os::raw::c_char =
-    b"ExternalConnected\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
+  b"ExternalConnected\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSExternalChargeCapableKey: *const ::std::os::raw::c_char =
-    b"ExternalChargeCapable\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"ExternalChargeCapable\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSBatteryInstalledKey: *const ::std::os::raw::c_char =
-    b"BatteryInstalled\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
+  b"BatteryInstalled\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSIsChargingKey: *const ::std::os::raw::c_char =
-    b"IsCharging\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"IsCharging\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMFullyChargedKey: *const ::std::os::raw::c_char =
-    b"FullyCharged\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"FullyCharged\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAtWarnLevelKey: *const ::std::os::raw::c_char =
-    b"AtWarnLevel\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"AtWarnLevel\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAtCriticalLevelKey: *const ::std::os::raw::c_char =
-    b"AtCriticalLevel\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"AtCriticalLevel\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSCurrentCapacityKey: *const ::std::os::raw::c_char =
-    b"CurrentCapacity\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"CurrentCapacity\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSMaxCapacityKey: *const ::std::os::raw::c_char =
-    b"MaxCapacity\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"MaxCapacity\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSDesignCapacityKey: *const ::std::os::raw::c_char =
-    b"DesignCapacity\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
+  b"DesignCapacity\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSTimeRemainingKey: *const ::std::os::raw::c_char =
-    b"TimeRemaining\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"TimeRemaining\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAmperageKey: *const ::std::os::raw::c_char =
-    b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSVoltageKey: *const ::std::os::raw::c_char =
-    b"Voltage\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
+  b"Voltage\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSCycleCountKey: *const ::std::os::raw::c_char =
-    b"CycleCount\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"CycleCount\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSMaxErrKey: *const ::std::os::raw::c_char =
-    b"MaxErr\x00" as *const [u8; 7usize] as *const ::std::os::raw::c_char;
+  b"MaxErr\x00" as *const [u8; 7usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterInfoKey: *const ::std::os::raw::c_char =
-    b"AdapterInfo\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"AdapterInfo\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSLocationKey: *const ::std::os::raw::c_char =
-    b"Location\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"Location\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSErrorConditionKey: *const ::std::os::raw::c_char =
-    b"ErrorCondition\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
+  b"ErrorCondition\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSManufacturerKey: *const ::std::os::raw::c_char =
-    b"Manufacturer\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"Manufacturer\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSManufactureDateKey: *const ::std::os::raw::c_char =
-    b"ManufactureDate\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"ManufactureDate\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSModelKey: *const ::std::os::raw::c_char =
-    b"Model\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
+  b"Model\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSSerialKey: *const ::std::os::raw::c_char =
-    b"Serial\x00" as *const [u8; 7usize] as *const ::std::os::raw::c_char;
+  b"Serial\x00" as *const [u8; 7usize] as *const ::std::os::raw::c_char;
 pub const kIOPMDeviceNameKey: *const ::std::os::raw::c_char =
-    b"DeviceName\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"DeviceName\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSLegacyBatteryInfoKey: *const ::std::os::raw::c_char =
-    b"LegacyBatteryInfo\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
+  b"LegacyBatteryInfo\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSBatteryHealthKey: *const ::std::os::raw::c_char =
-    b"BatteryHealth\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"BatteryHealth\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSHealthConfidenceKey: *const ::std::os::raw::c_char =
-    b"HealthConfidence\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
+  b"HealthConfidence\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSCapacityEstimatedKey: *const ::std::os::raw::c_char =
-    b"CapacityEstimated\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
+  b"CapacityEstimated\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSBatteryChargeStatusKey: *const ::std::os::raw::c_char =
-    b"ChargeStatus\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"ChargeStatus\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSBatteryTemperatureKey: *const ::std::os::raw::c_char =
-    b"Temperature\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"Temperature\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsKey: *const ::std::os::raw::c_char =
-    b"AdapterDetails\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
+  b"AdapterDetails\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSChargerConfigurationKey: *const ::std::os::raw::c_char =
-    b"ChargerConfiguration\x00" as *const [u8; 21usize] as *const ::std::os::raw::c_char;
+  b"ChargerConfiguration\x00" as *const [u8; 21usize] as *const ::std::os::raw::c_char;
 
 // kIOPMPSBatteryChargeStatusKey may have one of the following values
 pub const kIOPMBatteryChargeStatusTooHot: *const ::std::os::raw::c_char =
-    b"HighTemperature\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"HighTemperature\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMBatteryChargeStatusTooCold: *const ::std::os::raw::c_char =
-    b"LowTemperature\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
+  b"LowTemperature\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
 pub const kIOPMBatteryChargeStatusTooHotOrCold: *const ::std::os::raw::c_char =
-    b"HighOrLowTemperature\x00" as *const [u8; 21usize] as *const ::std::os::raw::c_char;
+  b"HighOrLowTemperature\x00" as *const [u8; 21usize] as *const ::std::os::raw::c_char;
 pub const kIOPMBatteryChargeStatusGradient: *const ::std::os::raw::c_char =
-    b"BatteryTemperatureGradient\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
+  b"BatteryTemperatureGradient\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
 
 // Definitions for battery location, in case of multiple batteries.
 pub const kIOPMPSLocationLeft: u32 = 1001;
@@ -272,31 +272,31 @@ pub const kIOPMGoodValue: u32 = 3;
 
 // Keys for kIOPMPSAdapterDetailsKey dictionary
 pub const kIOPMPSAdapterDetailsIDKey: *const ::std::os::raw::c_char =
-    b"AdapterID\x00" as *const [u8; 10usize] as *const ::std::os::raw::c_char;
+  b"AdapterID\x00" as *const [u8; 10usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsWattsKey: *const ::std::os::raw::c_char =
-    b"Watts\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
+  b"Watts\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsRevisionKey: *const ::std::os::raw::c_char =
-    b"AdapterRevision\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"AdapterRevision\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsSerialNumberKey: *const ::std::os::raw::c_char =
-    b"SerialNumber\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"SerialNumber\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsFamilyKey: *const ::std::os::raw::c_char =
-    b"FamilyCode\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"FamilyCode\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsAmperageKey: *const ::std::os::raw::c_char =
-    b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsDescriptionKey: *const ::std::os::raw::c_char =
-    b"Description\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"Description\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsPMUConfigurationKey: *const ::std::os::raw::c_char =
-    b"PMUConfiguration\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
+  b"PMUConfiguration\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsVoltage: *const ::std::os::raw::c_char =
-    b"AdapterVoltage\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
+  b"AdapterVoltage\x00" as *const [u8; 15usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsSourceIDKey: *const ::std::os::raw::c_char =
-    b"SourceID\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"SourceID\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsErrorFlagsKey: *const ::std::os::raw::c_char =
-    b"ErrorFlags\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
+  b"ErrorFlags\x00" as *const [u8; 11usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsSharedSourceKey: *const ::std::os::raw::c_char =
-    b"SharedSource\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
+  b"SharedSource\x00" as *const [u8; 13usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSAdapterDetailsCloakedKey: *const ::std::os::raw::c_char =
-    b"CloakedSource\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"CloakedSource\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 
 // values for kIOPSPowerAdapterFamilyKey
 pub const kIOPSFamilyCodeDisconnected: i32 = 0;
@@ -327,27 +327,27 @@ pub const kIOPSAdapterErrorFlagForeignObjectDetected: u32 = 4;
 pub const kIOPSAdapterErrorFlagDeviceNeedsToBeRepositioned: u32 = 8;
 
 pub const kIOPMPSInvalidWakeSecondsKey: *const ::std::os::raw::c_char =
-    b"BatteryInvalidWakeSeconds\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
+  b"BatteryInvalidWakeSeconds\x00" as *const [u8; 26usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSPostChargeWaitSecondsKey: *const ::std::os::raw::c_char =
-    b"PostChargeWaitSeconds\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"PostChargeWaitSeconds\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 pub const kIOPMPSPostDishargeWaitSecondsKey: *const ::std::os::raw::c_char =
-    b"PostDischargeWaitSeconds\x00" as *const [u8; 25usize] as *const ::std::os::raw::c_char;
+  b"PostDischargeWaitSeconds\x00" as *const [u8; 25usize] as *const ::std::os::raw::c_char;
 
 // CPU Power Management status keys
 pub const kIOPMGraphicsPowerLimitsKey: *const ::std::os::raw::c_char =
-    b"Graphics_Power_Limits\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"Graphics_Power_Limits\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 pub const kIOPMGraphicsPowerLimitPerformanceKey: *const ::std::os::raw::c_char =
-    b"Graphics_Power_Performance\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
+  b"Graphics_Power_Performance\x00" as *const [u8; 27usize] as *const ::std::os::raw::c_char;
 pub const kIOPMCPUPowerLimitsKey: *const ::std::os::raw::c_char =
-    b"CPU_Power_Limits\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
+  b"CPU_Power_Limits\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
 pub const kIOPMCPUPowerLimitProcessorSpeedKey: *const ::std::os::raw::c_char =
-    b"CPU_Speed_Limit\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"CPU_Speed_Limit\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 pub const kIOPMCPUPowerLimitProcessorCountKey: *const ::std::os::raw::c_char =
-    b"CPU_Available_CPUs\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"CPU_Available_CPUs\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 pub const kIOPMCPUPowerLimitSchedulerTimeKey: *const ::std::os::raw::c_char =
-    b"CPU_Scheduler_Limit\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
+  b"CPU_Scheduler_Limit\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
 pub const kIOPMThermalLevelWarningKey: *const ::std::os::raw::c_char =
-    b"Thermal_Level_Warning\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"Thermal_Level_Warning\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 
 // Thermal Warning Level values
 pub const kIOPMThermalLevelNormal: u32 = 0;
@@ -359,45 +359,45 @@ pub const kIOPMThermalLevelUnknown: u32 = 255;
 
 // PM Settings Controller setting types
 pub const kIOPMSettingWakeOnRingKey: *const ::std::os::raw::c_char =
-    b"Wake On Modem Ring\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"Wake On Modem Ring\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingRestartOnPowerLossKey: *const ::std::os::raw::c_char =
-    b"Automatic Restart On Power Loss\x00" as *const [u8; 32usize] as *const ::std::os::raw::c_char;
+  b"Automatic Restart On Power Loss\x00" as *const [u8; 32usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingWakeOnACChangeKey: *const ::std::os::raw::c_char =
-    b"Wake On AC Change\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
+  b"Wake On AC Change\x00" as *const [u8; 18usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingSleepOnPowerButtonKey: *const ::std::os::raw::c_char =
-    b"Sleep On Power Button\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"Sleep On Power Button\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingWakeOnClamshellKey: *const ::std::os::raw::c_char =
-    b"Wake On Clamshell Open\x00" as *const [u8; 23usize] as *const ::std::os::raw::c_char;
+  b"Wake On Clamshell Open\x00" as *const [u8; 23usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingReduceBrightnessKey: *const ::std::os::raw::c_char =
-    b"ReduceBrightness\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
+  b"ReduceBrightness\x00" as *const [u8; 17usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingDisplaySleepUsesDimKey: *const ::std::os::raw::c_char =
-    b"Display Sleep Uses Dim\x00" as *const [u8; 23usize] as *const ::std::os::raw::c_char;
+  b"Display Sleep Uses Dim\x00" as *const [u8; 23usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingTimeZoneOffsetKey: *const ::std::os::raw::c_char =
-    b"TimeZoneOffsetSeconds\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
+  b"TimeZoneOffsetSeconds\x00" as *const [u8; 22usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingMobileMotionModuleKey: *const ::std::os::raw::c_char =
-    b"MobileMotionModule\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"MobileMotionModule\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingGraphicsSwitchKey: *const ::std::os::raw::c_char =
-    b"GPUSwitch\x00" as *const [u8; 10usize] as *const ::std::os::raw::c_char;
+  b"GPUSwitch\x00" as *const [u8; 10usize] as *const ::std::os::raw::c_char;
 
 // Setting controlling drivers can register to receive scheduled wake data
 pub const kIOPMSettingAutoWakeSecondsKey: *const ::std::os::raw::c_char =
-    b"wake\x00" as *const [u8; 5usize] as *const ::std::os::raw::c_char;
+  b"wake\x00" as *const [u8; 5usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingAutoWakeCalendarKey: *const ::std::os::raw::c_char =
-    b"WakeByCalendarDate\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
+  b"WakeByCalendarDate\x00" as *const [u8; 19usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingAutoPowerSecondsKey: *const ::std::os::raw::c_char =
-    b"poweron\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
+  b"poweron\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingAutoPowerCalendarKey: *const ::std::os::raw::c_char =
-    b"PowerByCalendarDate\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
+  b"PowerByCalendarDate\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
 
 // Debug seconds auto wake
 pub const kIOPMSettingDebugWakeRelativeKey: *const ::std::os::raw::c_char =
-    b"WakeRelativeToSleep\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
+  b"WakeRelativeToSleep\x00" as *const [u8; 20usize] as *const ::std::os::raw::c_char;
 pub const kIOPMSettingDebugPowerRelativeKey: *const ::std::os::raw::c_char =
-    b"PowerRelativeToShutdown\x00" as *const [u8; 24usize] as *const ::std::os::raw::c_char;
+  b"PowerRelativeToShutdown\x00" as *const [u8; 24usize] as *const ::std::os::raw::c_char;
 
 // Maintenance wake calendar.
 pub const kIOPMSettingMaintenanceWakeCalendarKey: *const ::std::os::raw::c_char =
-    b"MaintenanceWakeCalendarDate\x00" as *const [u8; 28usize] as *const ::std::os::raw::c_char;
+  b"MaintenanceWakeCalendarDate\x00" as *const [u8; 28usize] as *const ::std::os::raw::c_char;
 
 // SetAggressiveness types
 pub const kPMGeneralAggressiveness: u32 = 0;
@@ -415,23 +415,23 @@ pub const kIOPMInternalPower: u32 = 1;
 pub const kIOPMExternalPower: u32 = 2;
 
 pub const kIOREMSleepEnabledKey: *const ::std::os::raw::c_char =
-    b"REMSleepEnabled\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
+  b"REMSleepEnabled\x00" as *const [u8; 16usize] as *const ::std::os::raw::c_char;
 
 // Strings for deciphering the dictionary returned from IOPMCopyBatteryInfo
 pub const kIOBatteryInfoKey: *const ::std::os::raw::c_char =
-    b"IOBatteryInfo\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
+  b"IOBatteryInfo\x00" as *const [u8; 14usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryCurrentChargeKey: *const ::std::os::raw::c_char =
-    b"Current\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
+  b"Current\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryCapacityKey: *const ::std::os::raw::c_char =
-    b"Capacity\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"Capacity\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryFlagsKey: *const ::std::os::raw::c_char =
-    b"Flags\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
+  b"Flags\x00" as *const [u8; 6usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryVoltageKey: *const ::std::os::raw::c_char =
-    b"Voltage\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
+  b"Voltage\x00" as *const [u8; 8usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryAmperageKey: *const ::std::os::raw::c_char =
-    b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
+  b"Amperage\x00" as *const [u8; 9usize] as *const ::std::os::raw::c_char;
 pub const kIOBatteryCycleCountKey: *const ::std::os::raw::c_char =
-    b"Cycle Count\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
+  b"Cycle Count\x00" as *const [u8; 12usize] as *const ::std::os::raw::c_char;
 
 pub const kIOBatteryInstalled: u32 = 1 << 2;
 pub const kIOBatteryCharge: u32 = 1 << 1;
@@ -464,33 +464,33 @@ pub const kIOPMSystemCapabilityNetwork: u32 = 0x08;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct IOPMCalendarStruct {
-    pub year: ::std::os::raw::c_uint,
-    pub month: ::std::os::raw::c_uchar,
-    pub day: ::std::os::raw::c_uchar,
-    pub hour: ::std::os::raw::c_uchar,
-    pub minute: ::std::os::raw::c_uchar,
-    pub second: ::std::os::raw::c_uchar,
-    pub selector: ::std::os::raw::c_uchar,
+  pub year: ::std::os::raw::c_uint,
+  pub month: ::std::os::raw::c_uchar,
+  pub day: ::std::os::raw::c_uchar,
+  pub hour: ::std::os::raw::c_uchar,
+  pub minute: ::std::os::raw::c_uchar,
+  pub second: ::std::os::raw::c_uchar,
+  pub selector: ::std::os::raw::c_uchar,
 }
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct IOPowerStateChangeNotification {
-    pub powerRef: *mut ::std::os::raw::c_void,
-    pub returnValue: ::std::os::raw::c_ulong,
-    pub stateNumber: ::std::os::raw::c_ulong,
-    pub stateFlags: IOPMPowerFlags,
+  pub powerRef: *mut ::std::os::raw::c_void,
+  pub returnValue: ::std::os::raw::c_ulong,
+  pub stateNumber: ::std::os::raw::c_ulong,
+  pub stateFlags: IOPMPowerFlags,
 }
 pub type sleepWakeNote = IOPowerStateChangeNotification;
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct IOPMSystemCapabilityChangeParameters {
-    pub notifyRef: u32,
-    pub maxWaitForReply: u32,
-    pub changeFlags: u32,
-    pub __reserved1: u32,
-    pub fromCapabilities: u32,
-    pub toCapabilities: u32,
-    pub __reserved2: [u32; 4usize],
+  pub notifyRef: u32,
+  pub maxWaitForReply: u32,
+  pub changeFlags: u32,
+  pub __reserved1: u32,
+  pub fromCapabilities: u32,
+  pub toCapabilities: u32,
+  pub __reserved2: [u32; 4usize],
 }

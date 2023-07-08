@@ -6,9 +6,9 @@ pub use io_kit_sys::hid::element::*;
 pub struct IOHIDElement(IOHIDElementRef);
 
 impl Drop for IOHIDElement {
-    fn drop(&mut self) {
-        unsafe { CFRelease(self.as_CFTypeRef()) }
-    }
+  fn drop(&mut self) {
+    unsafe { CFRelease(self.as_CFTypeRef()) }
+  }
 }
 
 impl_TCFType!(IOHIDElement, IOHIDElementRef, IOHIDElementGetTypeID);
